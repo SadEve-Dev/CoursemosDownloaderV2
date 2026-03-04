@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "이루리 강의 영상 다운로더",
+  "version": "2.8.10",
+  "description": "강원대학교 이루리 강의 영상 다운로드 도구",
+  "permissions": ["downloads", "offscreen", "storage", "activeTab"],
+  "background": { "service_worker": "scripts/worker.js" },
+  "content_scripts": [{
+    "matches": ["*://eruri.kangwon.ac.kr/mod/vod/*"],
+    "js": ["scripts/content.js"],
+    "css": ["style.css"] 
+  }],
+  "action": { "default_title": "이루리 다운로더" },
+  "icons": { "16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png" }
+}

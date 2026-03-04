@@ -1,0 +1,8 @@
+#lxp-layer { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); width: 340px; background: white; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.25); z-index: 10000; font-family: sans-serif; display: none; color: #333; }
+#lxp-h { padding: 14px; background: #222; color: white; cursor: move; border-radius: 12px 12px 0 0; display: flex; justify-content: space-between; align-items: center; }
+#lxp-list { list-style: none; padding: 12px; margin: 0; max-height: 400px; overflow-y: auto; background: #fdfdfd; border-radius: 0 0 12px 12px; }
+.lxp-item { background: white; padding: 12px; border-radius: 8px; margin-bottom: 10px; border: 1px solid #eee; position: relative; font-size: 12px; }
+.lxp-bar-bg { width: 100%; height: 5px; background: #f0f0f0; border-radius: 10px; overflow: hidden; margin-top: 8px; }
+.lxp-bar-fill { height: 100%; background: #27ae60; width: 0%; transition: width 0.5s linear; }
+.lxp-btns { position: absolute; top: 12px; right: 10px; display: flex; gap: 8px; }
+.lxp-btn-i { cursor: pointer; border: none; background: none; color: #bdc3c7; padding: 0; }
